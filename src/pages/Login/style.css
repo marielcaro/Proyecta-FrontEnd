@@ -1,0 +1,13 @@
+:root {
+    --orange-primary: #FF5600;
+    --orange-secondary: #F2B705;
+}
+
+.login {
+    height: 100vh;
+    width: 100%;
+
+    padding-top: 5%;
+
+    background-image: linear-gradient(176deg, var(--orange-primary) 0%, var(--orange-secondary) 74%);
+}
