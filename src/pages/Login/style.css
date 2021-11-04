@@ -1,14 +1,11 @@
 :root {
-    --orange-primary: #FF5600;
-    --orange-secondary: #F2B705;
+    --orange-primary: #EB5401;
+    --orange-secondary: #EFB52B;
 }
 
-.login {
-    height: 100vh;
+html, body, .login {
     width: 100%;
-
-    padding-top: 5%;
-
+    height: 100%;
     background-image: linear-gradient(176deg, var(--orange-primary) 0%, var(--orange-secondary) 74%);
 }
 
@@ -19,15 +16,72 @@
     color: #fff;
     box-shadow: 0px 4px 12px rgba(130, 130, 130, 0.5);
 
-    /* Nunito/Button */
-    font-family: Nunito;
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 120%;
+    letter-spacing: 0.125em;
+    color: #FFFFFF;
+
     
 }
 
 .btn-size-login{
     padding:5px 50px;
+}
+
+.left-title {
+    text-align: center;
+    letter-spacing: 0.025em;
+}
+
+.left-title h1 {
+    font-family: 'Nunito';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 120%;
+    font-size: 34px;
+
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-login__container {
+    box-shadow: 0px 6px 6px -7px rgba(0,0,0,0.81), inset 0px 0px 2px 4px #F6EBF9;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 738px;
+    width: 487px;
+}
+
+.form-login__content {
+    padding: 70px;
+}   
+
+.form-login__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+}
+
+.form-login__forgot {
+    letter-spacing: 0.15em;
+    font-family: 'Nunito';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    line-height: 120%;
+    color: #016A66;
+    font-size: 10px;
+    padding: 10px;
+}
+
+.login-img {
+    width: 478px;
+    height: 474px;
 }

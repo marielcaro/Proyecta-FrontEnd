@@ -1,0 +1,22 @@
+.custom-nav {
+    height: 92px;
+}
+
+.nav-container {
+    padding: 0px 65px;
+}
+
+.nav-title {
+    font-family: 'Berkshire Swash';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 120%;
+    font-size: 49px;
+    color: #FFFFFF;
+}
+
+.btn-acceder {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+}
