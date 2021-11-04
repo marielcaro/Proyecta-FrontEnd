@@ -1,8 +1,19 @@
+import { useRef } from "react"
 import "./style.css"
 
 import Office from '../../assets/icons/office.svg'
+import { iniciarSesion } from "../../services/strapi-cms"
 
 const Login = () => {
+
+    const email = useRef()
+    const password = useRef()
+
+    const handleSubmit = e => {
+        e.preventDefault()
+        iniciarSesion(email.current.value, password.current.value)
+    }
+
     return (
         <div className="login">
             <div className="container-fluid">
@@ -24,18 +35,17 @@ const Login = () => {
                                 Iniciar Sesion
                             </h1>
                             <div className="card-body">
-                                <form>
+                                <form onSubmit={handleSubmit}>
                                     <div className="mb-3">
-                                        <label className="form-label">Usuario</label>
-                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                        <label className="form-label">Email</label>
+                                        <input ref={email} type="email" className="form-control" />
                                     </div>
                                     <div className="mb-3">
                                         <label className="form-label">Contraseña</label>
-                                        <input type="password" className="form-control" id="exampleInputPassword1" />
+                                        <input ref={password} type="password" className="form-control" />
                                     </div>
-                                    <div className="text-center"><button type="submit" className="btn btn-login rounded-pill btn-size-login  ">Ingresar</button>
-                                    </div>
-                                    <div className="text-center"><button type="submit" className="btn btn-login rounded-pill btn-size-login  ">Ingresar2</button>
+                                    <div className="text-center">
+                                        <button type="submit" className="btn btn-login rounded-pill btn-size-login  ">Ingresar</button>
                                     </div>
                                 </form>
                             </div>
