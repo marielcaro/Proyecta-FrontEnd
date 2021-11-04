@@ -35,6 +35,8 @@ const Login = () => {
                                     </div>
                                     <div className="text-center"><button type="submit" className="btn btn-login rounded-pill btn-size-login  ">Ingresar</button>
                                     </div>
+                                    <div className="text-center"><button type="submit" className="btn btn-login rounded-pill btn-size-login  ">Ingresar2</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
