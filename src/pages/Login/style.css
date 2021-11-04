@@ -11,3 +11,23 @@
 
     background-image: linear-gradient(176deg, var(--orange-primary) 0%, var(--orange-secondary) 74%);
 }
+
+.btn-login {
+    width: 179px;
+    height: 41px;
+    background-color: #018C96;
+    color: #fff;
+    box-shadow: 0px 4px 12px rgba(130, 130, 130, 0.5);
+
+    /* Nunito/Button */
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    
+}
+
+.btn-size-login{
+    padding:5px 50px;
+}

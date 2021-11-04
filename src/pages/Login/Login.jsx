@@ -20,18 +20,21 @@ const Login = () => {
                     </div>
                     <div className="col-12 col-md-5">
                         <div className="card">
+                            <h1 className="card-title text-center my-4">
+                                Iniciar Sesion
+                            </h1>
                             <div className="card-body">
                                 <form>
                                     <div className="mb-3">
-                                        <label for="exampleInputEmail1" className="form-label">Email address</label>
+                                        <label className="form-label">Usuario</label>
                                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                                     </div>
                                     <div className="mb-3">
-                                        <label for="exampleInputPassword1" className="form-label">Password</label>
+                                        <label className="form-label">Contraseña</label>
                                         <input type="password" className="form-control" id="exampleInputPassword1" />
                                     </div>
-                                    <button type="submit" className="btn btn-primary">Submit</button>
+                                    <div className="text-center"><button type="submit" className="btn btn-login rounded-pill btn-size-login  ">Ingresar</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
