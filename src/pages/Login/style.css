@@ -53,10 +53,16 @@ html, body, .login {
     border-radius: 10px;
     height: 738px;
     width: 487px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-login__content {
-    padding: 70px;
+    height: 569px;
+    width: 316px;
+    top: -100px;
 }   
 
 .form-login__title {
@@ -82,6 +88,39 @@ html, body, .login {
 }
 
 .login-img {
-    width: 478px;
-    height: 474px;
+    width: 600px;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.form-inicio__footer {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+
+    text-align: center;
+    letter-spacing: 0.025em;
+
+    color: #000000;
+}
+
+.form-inicio__footer-login {
+    position: relative;
+    top: 130px;
+}
+
+.form-inicio__footer-signup {
+    position: relative;
+    top: 56px;
+}
+
+.form-incio__enlace {
+    text-decoration-line: underline;
+    color: #018C96;
+}
+
+.form-incio__enlace:hover {
+    cursor: pointer;
 }
