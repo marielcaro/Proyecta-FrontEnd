@@ -10,6 +10,7 @@ import KeyLogin from '../../assets/icons/key.svg'
 import { iniciarSesion, crearCuenta } from "../../services/strapi-cms"
 import ProyectosActivos from "../../components/ProyectosActivos"
 import Navbar from "../../components/Navbar"
+import InstruccionesAcceso from "../../components/InstruccionesAcceso"
 
 const Login = () => {
 
@@ -139,6 +140,7 @@ const Login = () => {
                     </div>
                 </div>
                 <ProyectosActivos />
+                <InstruccionesAcceso/>
             </div>
         </div>
     )
