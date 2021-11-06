@@ -1,0 +1,12 @@
+:root {
+    --color-primary: #FFFFFF;   
+    --color-secondary: rgba(239,181,43,0.4);
+}
+
+html, body, .login {
+    width: 100%;
+    height: 100vh; 
+    background-image: linear-gradient(137deg, var(--color-primary) 0%, var(--color-secondary) 130%);
+}
+
+
