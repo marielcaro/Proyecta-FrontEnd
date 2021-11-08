@@ -3,11 +3,7 @@ import Navbar from "../../components/Navbar"
 import "./style.css"
 import "./style-postlogin.css"
 
-import LeftLogin from '../../assets/imgs/left-login.svg'
 import RepeatIcon from '../../assets/icons/repeat.svg'
-import EmailIcon from '../../assets/icons/email.svg'
-import UserLogin from '../../assets/icons/user.svg'
-import KeyLogin from '../../assets/icons/key.svg'
 import CalendarIcon from '../../assets/icons/calendar.svg'
 import medicoVector from '../../assets/icons/medicoVector.svg'
 import MonumentIcon from '../../assets/icons/monument.svg'
@@ -22,7 +18,7 @@ const Postlogin = () => {
     const user = useRef()
 
     return (
-        <div className="login">
+        <div className="postpostlogin">
             <Navbar isAuthenticated />
             <div className="container">
                 <div className="card postlogin">
@@ -31,7 +27,6 @@ const Postlogin = () => {
                         <p className="subtitle">¡Qué bueno tenerte abordo!</p>
                         <p className="subtitle2">Quisiéramos saber un poco más sobre vos</p>
                     </div>
-
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-4">
                             <p>Subí tu foto de perfil </p>
@@ -56,7 +51,7 @@ const Postlogin = () => {
                                         />
                                     </div>
                                     <div className="my-4 d-flex">
-                                        <img src={CalendarIcon} alt="key" className="img-fluid" />
+                                        <img src={CalendarIcon} alt="calendar" className="img-fluid" />
                                         <input
                                             type="date"
                                             value="Fecha de nacimiento"
