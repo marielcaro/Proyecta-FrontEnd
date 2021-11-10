@@ -67,6 +67,7 @@ const Login = () => {
                                 <h1 className="form-login__title">
                                     {isLogin ? "Iniciar Sesión" : "Crear Cuenta"}
                                 </h1>
+
                                 <form onSubmit={handleSubmit}>
                                     {
                                         isLogin
@@ -140,7 +141,7 @@ const Login = () => {
                     </div>
                 </div>
                 <ProyectosActivos />
-                <InstruccionesAcceso/>
+                <InstruccionesAcceso />
             </div>
         </div>
     )
