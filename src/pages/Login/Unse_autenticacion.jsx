@@ -25,7 +25,7 @@ const Unse_autenticacion = () => {
                         </div>
                     </div>
                     <div className="grid-3 d-flex justify-content-center">
-                        <div className="Formulario">
+                        <div className="Formulario-aut">
                             <form>
                                 <div className="my-3 d-flex">
                                     <img src={NameIcon} alt="user" className="img-fluid" />
@@ -55,15 +55,17 @@ const Unse_autenticacion = () => {
                         </div>
                     </div>
                     <div className="row justify-text-center">
-                        <ul className="text-aut">
-                            <li>*Recordá que tus datos deben coincidir con la Base de Datos de Investigadores de la UNSE.
-                            </li>
-                            <li>*Cuando se apruebe tu solicitud de Líder te enviaremos una notificación al correo electrónico indicado
-                            </li>
-                        </ul>
+                        <div className="col cont2">
+                            <p className="textinho">*Recordá que tus datos deben coincidir con la Base de Datos de Investigadores de la UNSE.
+                            </p>
+                            <p className="textinho">*Cuando se apruebe tu solicitud de Líder te enviaremos una notificación al correo electrónico indicado
+                            </p>
+                        </div>
                     </div>
                     <div className="row">
-
+                        <div className="col d-flex justify-content-end ">
+                            <button className="btn btn-login btn-size-login boton-auto">Confirmar</button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -12,10 +12,8 @@ const Finregistro = () => {
                     <div className="contenido">
                         <h1 className="title2">¡Gracias!</h1>
                         <div >
-                            <p className="card-text Texto" >Una vez que verifiquemos tus datos, aproximadamente en 7 días te enviaremos una notificación a tu correo electrónico para darte de alta como Líder de Proyectos.</p>
-                        </div>
-                        <div >
-                            <p className="card-text Texto"> **Recuerda revisar tu casilla de Spam en caso de que no recibas este correo en el tiempo indicado.</p>
+                            <p className="texto" >Una vez que verifiquemos tus datos, aproximadamente en 7 días te enviaremos una notificación a tu correo electrónico para darte de alta como Líder de Proyectos.</p>
+                            <p className="texto"> **Recuerda revisar tu casilla de Spam en caso de que no recibas este correo en el tiempo indicado.</p>
                         </div>
                         <div className>
                     </div>

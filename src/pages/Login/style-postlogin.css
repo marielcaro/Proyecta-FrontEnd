@@ -34,12 +34,21 @@
 
 }
 
-.Texto {
-    margin: 45px;
-    text-align: left;
+.texto {
+    padding: 0px 20px;
+    font-family: "Nunito";
+    margin: 25px 20px 20px;
+    font-size: 16px;
+    letter-spacing: 1.5%;
+    text-align:justify;
+    
 }
 .boton {
     margin-top: 50px;
+}
+
+.boton:hover {
+    color: white;
 }
 
 /*ESTILO DE UNSE_AUTENTICACION*/
@@ -64,7 +73,28 @@
     font-size: 49px;
     color: #EB5401;
     text-align: center;
-
-    padding: 30px;
+    padding: 25px;
     /* margin: 31px 0px; */
+}
+
+.textinho {
+    font-family: "Nunito";
+    font-size: 16px;
+    letter-spacing: 1.5%;
+    text-align:justify;  
+    margin-bottom: 0px; 
+    margin-left: 60px;
+}
+
+.cont2{
+    padding: 50px;
+}
+
+.Formulario-aut {
+    margin-top: 50px;
+    margin-bottom: 13px;
+}
+
+.boton-auto {
+    margin-top: 50px;
 }

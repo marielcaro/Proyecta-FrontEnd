@@ -30,6 +30,11 @@ html, body, .login {
     border-radius: 50px;
 }
 
+.btn-login:hover, .btn-size-login:hover{
+    color: white;
+    background-color: #02828b;
+}
+
 
 .left-title {
     text-align: center;
