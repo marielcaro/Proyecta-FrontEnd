@@ -1,4 +1,4 @@
-import { useRef, useState } from "react"
+import { useRef } from "react"
 import "./style.css"
 import "./style-postlogin.css"
 import Navbar from "../../components/Navbar"
@@ -6,10 +6,7 @@ import Navbar from "../../components/Navbar"
 import CalendarIcon from '../../assets/icons/calendar.svg'
 import NameIcon from '../../assets/icons/name.svg'
 
-
-
-
-const Unse_autenticacion = () => {
+const UnseAutenticacion = () => {
 
     const user = useRef()
 
@@ -74,4 +71,4 @@ const Unse_autenticacion = () => {
 
 }
 
-export default Unse_autenticacion
+export default UnseAutenticacion
