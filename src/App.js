@@ -5,6 +5,7 @@
 // import UnseAutenticacion from './pages/Login/UnseAutenticacion';
 
 import Tablero from './Modules/Admin/pages/Tablero'
+import './App.css'
 
 function App() {
 

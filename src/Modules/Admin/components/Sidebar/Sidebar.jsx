@@ -1,15 +1,16 @@
-import './sidebar.css'
+import style from './sidebar.module.css'
 
 export const Sidebar = () => {
-    return <>
-        <h1>Sidebar</h1>
+    return <div className= {style.cajablanca}>
         <ul>
-            <li>Tablero</li>
-            <li>Etc</li>
-            <li>Etc</li>
-            <li>Etc</li>
+            <li>TABLERO</li>
+            <li>PROYECTOS</li>
+            <li>TAREAS</li>
+            <li>CALENDARIO</li>
+            <li>REPORTES</li>
+            <li>AJUSTES</li>
         </ul>
-    </>
+        </div>
 }
 
 export default Sidebar
