@@ -1,15 +1,19 @@
-import Navbar from "./components/Navbar";
-import Login from "./pages/Login/Login";
+// import { useState } from 'react'
+// import Finregistro from './pages/Login/Finregistro';
+// import Postlogin from './pages/Login/Postlogin'
+// import Login from "./pages/Login/Login"
+// import UnseAutenticacion from './pages/Login/UnseAutenticacion';
+
+import Tablero from './Modules/Admin/pages/Tablero'
+import './App.css'
 
 function App() {
 
-
-    return ( 
+	return (
 		<>
-        <Navbar />
-		<Login />
+			<Tablero />
 		</>
-    );
+	);
 }
 
 export default App;

@@ -1,0 +1,5 @@
+Savi
+    - Analizar opcions para mejorar el manejor de CSS (Sass o Style Components)
+    - Crear exportable para todos los iconos
+    - Modularizar codigo (Refactor)
+    - Pulir la parte responsive
