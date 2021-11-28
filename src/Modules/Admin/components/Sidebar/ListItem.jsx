@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import classnames from "classnames";/* Se instalo una libreria llama classnames */
 import style from "./sidebar.module.css";
 
 export const ListItem = ({ item, selected }) => {
@@ -7,7 +7,7 @@ export const ListItem = ({ item, selected }) => {
     <li
       className={classnames(style["list-item"], { [style.selected]: selected })}
     >
-      <img src={Icon} alt="dashboard" /> {txt}
+      <img src={Icon} alt="dashboard" className={classnames({[style.selectedicon]: selected})} /> {txt}
     </li>
   );
 };
