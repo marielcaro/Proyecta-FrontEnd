@@ -22,7 +22,7 @@ export const Navbar = () => {
           width="64"
           alt="logo"
         />
-        <p className="nav-title">Proyecta</p>
+        <p className={isAuth ? "nav-title-admin" : "nav-title-public"}>Proyecta</p>
       </div>
       {
         isAuth && <div className="col d-flex justify-content-end align-items-center">

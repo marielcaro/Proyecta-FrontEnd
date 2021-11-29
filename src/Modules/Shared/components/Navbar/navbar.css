@@ -17,13 +17,23 @@
     border-bottom: 4px solid #EB5401;
 }
 
-.nav-title {
+.nav-title-admin {
     font-family: 'Berkshire Swash';
     font-weight: normal;
     font-style: normal;
     line-height: 120%;
     font-size: 49px;
     color: #EB5401;
+    padding-top: 17px;
+}
+
+.nav-title-public {
+    font-family: 'Berkshire Swash';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 120%;
+    font-size: 49px;
+    color: #FFFFFF;
     padding-top: 17px;
 }
 
