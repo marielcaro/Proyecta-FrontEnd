@@ -1,4 +1,4 @@
-import { Navbar } from '../../Shared/components'
+import { Navbar } from '../../shared/components'
 import { Sidebar } from '../components'
 import './LayoutStyle.css'
 

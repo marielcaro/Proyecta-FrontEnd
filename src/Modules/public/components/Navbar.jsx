@@ -1,4 +1,4 @@
-import Logo from '../assets/icons/layers.png'
+import Logo from '../../../assets/icons/layers.png'
 import "./styles.css"
 
 const Navbar = ({ isAuthenticated = false }) => {

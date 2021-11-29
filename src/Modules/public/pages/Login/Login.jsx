@@ -1,18 +1,24 @@
 import { useRef, useState } from "react"
 import "./style.css"
 
-import LeftLogin from '../../assets/imgs/left-login.svg'
-import RepeatIcon from '../../assets/icons/repeat.svg'
-import EmailIcon from '../../assets/icons/email.svg'
-import UserLogin from '../../assets/icons/user.svg'
-import KeyLogin from '../../assets/icons/key.svg'
+import LeftLogin from '../../../../assets/imgs/left-login.svg'
+import RepeatIcon from '../../../../assets/icons/repeat.svg'
+import EmailIcon from '../../../../assets/icons/email.svg'
+import UserLogin from '../../../../assets/icons/user.svg'
+import KeyLogin from '../../../../assets/icons/key.svg'
 
-import { iniciarSesion, crearCuenta } from "../../services/strapi-cms"
-import ProyectosActivos from "../../components/ProyectosActivos"
-import Navbar from "../../components/Navbar"
 import InstruccionesAcceso from "../../components/InstruccionesAcceso"
+import ProyectosActivos from "../../components/ProyectosActivos"
+// import Navbar from "../../components/Navbar"
+import { Navbar } from "../../../shared/components/Navbar"
+
+// Redux
+import { useDispatch } from 'react-redux'
+import { Auth } from '../../../../redux/Auth'
 
 const Login = () => {
+
+    const dispatch = useDispatch()
 
     const [isLogin, setLogin] = useState(true)
     const repeatPassword = useRef()
@@ -21,17 +27,17 @@ const Login = () => {
     const user = useRef()
 
     const limpiarValores = () => {
-        repeatPassword.current.value = ""
-        password.current.value = ""
-        email.current.value = ""
-        user.current.value = ""
+        repeatPassword.current = ""
+        password.current = ""
+        email.current = ""
+        user.current = ""
     }
 
-    const handleSubmit = e => {
-        e.preventDefault()
+    const handleSubmit = async event => {
+        event.preventDefault()
 
         if (isLogin) {
-            iniciarSesion(user.current.value, password.current.value)
+            await dispatch(Auth.loginAsync(user.current.value, password.current.value))
             return
         }
 
@@ -41,8 +47,7 @@ const Login = () => {
             return
         }
 
-        crearCuenta(user.current.value, email.current.value, password.current.value)
-
+        await dispatch(Auth.registerAsync(user.current.value, email.current.value, password.current.value))
         setLogin(!isLogin)
         limpiarValores()
     }

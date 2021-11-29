@@ -1,50 +1,48 @@
 import httpClient from "./httpClient"
 
-const keys = {
-    jwt: 'jwt',
-    user: 'users'
+export const keys = {
+    jwt: 'jwt'
 }
 
-const saveSessionData = (user, jwt) => {
+const saveSessionData = (jwt) => {
     httpClient.defaults.headers.Authorization = `Bearer ${jwt}`
-    localStorage.setItem(keys.user, JSON.stringify(user))
     localStorage.setItem(keys.jwt, jwt)
 }
 
-export const iniciarSesion = async (email, password) => {
-    // TODO: Add SweetAlert
-    try {
-        const resultado = await httpClient.post('/auth/local', {
-            identifier: email,
-            password
-        })
+export const signIn = async (email, password) => {
+    const result = await httpClient.post('/auth/local', {
+        identifier: email,
+        password
+    })
 
-        const user = resultado.data.user
-        const jwt = resultado.data.jwt
-        saveSessionData(user, jwt)
-        alert('Sesion iniciada!')
-    } catch (error) {
-        console.log(error)
-        alert('Error!')
-    }
+    const user = result.data.user
+    const jwt = result.data.jwt
+    saveSessionData(jwt)
+    return user
 }
 
-export const cerrarSesion = () => {
+export const signOut = () => {
     localStorage.removeItem(keys.jwt)
-    localStorage.removeItem(keys.user)
 }
 
-export const crearCuenta = async (username, email, password) => {
-    try {
-        const resultado = await httpClient.post('/auth/local/register', {
-            username, password, email
-        })
+export const checkToken = async () => {
+    const jwt = localStorage.getItem(keys.jwt)
+    const result = await httpClient('/users/me', {
+        headers: {
+            Authorization: `Bearer ${jwt}`
+        }
+    })
+    console.log(result)
+}
 
-        const user = resultado.data.user
-        const jwt = resultado.data.jwt
-        saveSessionData(user, jwt)
-        alert('Cuenta creada!')
-    } catch (error) {
-        console.log(error)
-    }
+export const signUp = async (username, email, password) => {
+    const result = await httpClient.post('/auth/local/register', {
+        username, password, email
+    })
+
+    const user = result.data.user
+    const jwt = result.data.jwt
+
+    saveSessionData(jwt)
+    return user
 }

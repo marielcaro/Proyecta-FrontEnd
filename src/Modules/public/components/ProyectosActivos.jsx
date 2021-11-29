@@ -1,5 +1,6 @@
-import InvestigadoresIcon from '../assets/icons/investigadores.svg'
-import PublicacionesIcon from '../assets/icons/publicaciones.svg'
+import InvestigadoresIcon from '../../../assets/icons/investigadores.svg'
+import PublicacionesIcon from '../../../assets/icons/publicaciones.svg'
+import './styles.css'
 
 const ProyectosActivos = () => {
     const proyectosActivos = [

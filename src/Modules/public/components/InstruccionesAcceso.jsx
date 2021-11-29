@@ -1,4 +1,5 @@
-import InformationIcon from '../assets/icons/information.svg'
+import InformationIcon from '../../../assets/icons/information.svg'
+import './styles.css'
 
 const InstruccionesAcceso = () => {
     const instruccionesAcceso = [
