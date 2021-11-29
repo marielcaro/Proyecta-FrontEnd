@@ -1,19 +1,19 @@
-// import { useState } from 'react'
-// import Finregistro from './pages/Login/Finregistro';
-// import Postlogin from './pages/Login/Postlogin'
-// import Login from "./pages/Login/Login"
-// import UnseAutenticacion from './pages/Login/UnseAutenticacion';
+import { useDispatch, useSelector, shallowEqual } from 'react-redux'
+import { Auth } from './redux/Auth'
 
-import Tablero from './Modules/Admin/pages/Tablero'
+import Login from './modules/public/pages/Login/Login'
+import Tablero from './modules/admin/pages/Tablero'
 import './App.css'
+import { useEffect } from 'react'
+
 
 function App() {
+	const dispatch = useDispatch()
+	const isAuth = useSelector(state => state.auth.isAuth, shallowEqual)
+	const checkIsAuth = async () => await dispatch(Auth.checkAuthAsync())
 
-	return (
-		<>
-			<Tablero />
-		</>
-	);
+	useEffect(() => { checkIsAuth() }, [])
+	return <>{isAuth ? <Tablero /> : <Login />}</>
 }
 
 export default App;

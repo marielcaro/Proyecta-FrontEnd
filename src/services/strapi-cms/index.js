@@ -1,1 +1,1 @@
-export * from './users'
+export * as STRAPI from './users'
