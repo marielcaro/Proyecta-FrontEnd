@@ -4,6 +4,8 @@ import { BaseLayout } from '../../Layouts'
 export const Tablero = () => {
     return <BaseLayout>
         <ProyectCard />
+        <ProyectCard />
+        <ProyectCard />
     </BaseLayout>
 }
 

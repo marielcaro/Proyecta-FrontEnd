@@ -38,6 +38,7 @@ ul {
 
 li {
     margin: 20px 5px;
+    cursor: pointer;
 }
 
 /* .list-item {
