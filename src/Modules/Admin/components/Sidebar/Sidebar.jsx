@@ -1,28 +1,16 @@
-import { useState } from "react";
-import style from "./sidebar.module.css";
-import { items } from './items'
-
-import { ListItem } from './ListItem'
+import style from './sidebar.module.css'
 
 export const Sidebar = () => {
-  // Aqui nos vamos a traer la ruta actual en la que esta el usuario, si esta en www.pagina.com/reportes entonces mostramos REPORTES
-  const [selected,setSelected] = useState("/tablero");
-  return (
-    <div className={style.cajablanca}>
-      <div className="col tipografia">
+    return <div className= {style.cajablanca}>
         <ul>
-          {items.map((item, index) => (
-            <ListItem
-              item={item}
-              key={index}
-              selected={selected === item.path}
-              setSelected={setSelected}
-            />
-          ))}
+            <li>TABLERO</li>
+            <li>PROYECTOS</li>
+            <li>TAREAS</li>
+            <li>CALENDARIO</li>
+            <li>REPORTES</li>
+            <li>AJUSTES</li>
         </ul>
-      </div>
-    </div>
-  );
-};
+        </div>
+}
 
-export default Sidebar;
+export default Sidebar
