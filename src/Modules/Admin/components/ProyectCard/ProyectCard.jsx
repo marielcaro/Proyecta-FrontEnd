@@ -1,6 +1,6 @@
 import styles from './ProyectCard.module.css'
 import EmailIcon from '../../../../assets/icons/email.svg'
-import ImageRounded from '../../../Shared/components/ImageRounded/ImageRounded';
+import ImageRounded from '../../../shared/components/ImageRounded/ImageRounded';
 
 export const ProyectCard = () => {
     const tareasTotales = 20;
@@ -27,7 +27,7 @@ export const ProyectCard = () => {
                         mx-2">#TAG 3</div>
             </div>
             <div className="row my-2">
-                <div className="col-3 bg-success">
+                <div className="col-3">
                     <ImageRounded className="text-center" />
                 </div>
                 <div className="col-3">

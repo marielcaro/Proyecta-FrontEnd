@@ -10,7 +10,7 @@ export const Sidebar = () => {
   return (
     <div className={style.cajablanca}>
       <div className="col tipografia">
-        <ul>
+        <ul className="m-0">
           {items.map((item, index) => (
             <ListItem
               item={item}

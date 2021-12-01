@@ -1,3 +1,11 @@
 .tabla{
     background-color:#F2F2F2;
 }
+
+.main-content {
+    height: 100%;
+}
+
+.layout {
+    height: max-content;
+}
