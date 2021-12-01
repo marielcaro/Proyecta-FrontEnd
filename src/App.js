@@ -2,9 +2,9 @@ import { useDispatch, useSelector, shallowEqual } from 'react-redux'
 import { Auth } from './redux/Auth'
 
 import Login from './Modules/public/pages/Login/Login'
-// import Finregistro from './Modules/public/pages/Login/Finregistro'
-// import Postlogin from './Modules/public/pages/Login/Postlogin'
-// import UnseAutenticacion from './Modules/public/pages/Login/UnseAutenticacion'
+import Finregistro from './Modules/public/pages/Login/Finregistro'
+import Postlogin from './Modules/public/pages/Login/Postlogin'
+import UnseAutenticacion from './Modules/public/pages/Login/UnseAutenticacion'
 
 import Tablero from './Modules/Admin/pages/Tablero'
 

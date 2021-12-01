@@ -1,11 +1,22 @@
-import { ProyectCard } from '../../components'
+import { CalendarCard, NotificationsCard, ProyectCard, TaskCard} from '../../components'
 import { BaseLayout } from '../../Layouts'
 
 export const Tablero = () => {
+    
     return <BaseLayout>
-        <ProyectCard />
-        <ProyectCard />
-        <ProyectCard />
+        <div className="row g-0">
+            <div className="col gap-0">
+                <ProyectCard />
+                <ProyectCard />
+            </div>
+            <div className="col gap-0">
+                <TaskCard />
+            </div>
+            <div className="col gap-0">
+                <CalendarCard />
+                <NotificationsCard />
+            </div>
+        </div>
     </BaseLayout>
 }
 

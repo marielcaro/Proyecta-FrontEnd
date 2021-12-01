@@ -1,3 +1,17 @@
 .tabla{
     background-color:#F2F2F2;
 }
+
+.main-wrapper {
+    height: 100vh;  
+  }
+
+.segundaseccion {
+    height: 90%;
+}
+
+.sidebar {
+    width: auto;
+    filter: drop-shadow(6px 2px 40px rgba(0, 0, 0, 0.25));
+}
+  
