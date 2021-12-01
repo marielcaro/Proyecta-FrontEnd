@@ -1,7 +1,5 @@
 .container {
-    background-color: burlywood;
-    height: 50%;
-    width: 50%;
+    padding: 30px;
 }
 
 .textocard{
@@ -9,4 +7,14 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+    margin-top: 5px;
+}
+
+.tagtext{
+    text-size-adjust: auto;
+    font-size: 0.7vw;
+}
+
+.shadowcard {
+    box-shadow: 0px 4px 12px rgba(130, 130, 130, 0.5);
 }

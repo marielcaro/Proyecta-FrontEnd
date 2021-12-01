@@ -3,9 +3,9 @@ import { Sidebar } from '../components'
 import './LayoutStyle.css'
 
 export const BaseLayout = ({ children }) => {
-    return <div className="container-fluid">
+    return <div className="container-fluid main-wrapper m-0 p-0">
         <Navbar />
-        <div className="d-flex">
+        <div className="d-flex segundaseccion">
             <div className="col-md-2 g-0">
                 <Sidebar />
             </div>

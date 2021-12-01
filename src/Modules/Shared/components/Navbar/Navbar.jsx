@@ -10,7 +10,7 @@ export const Navbar = () => {
   const classNav = isAuth ? "custom-nav-login" : "custom-nav-post-login"
   return (
     <div
-      className={`row justify-content-between align-items-center ${classNav} nav-container`}
+      className={`row g-0 justify-content-between align-items-center ${classNav} nav-container`}
     >
 
       <div className="col d-flex justify-content-start align-items-center">

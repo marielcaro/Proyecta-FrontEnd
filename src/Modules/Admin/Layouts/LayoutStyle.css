@@ -1,3 +1,12 @@
 .tabla{
     background-color:#F2F2F2;
 }
+
+.main-wrapper {
+    height: 100vh;  
+  }
+
+.segundaseccion {
+    height: 90%;
+}
+  
