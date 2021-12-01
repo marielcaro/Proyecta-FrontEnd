@@ -9,7 +9,7 @@ export const Sidebar = () => {
   const [selected,setSelected] = useState("/tablero");
   return (
     <div className={style.cajablanca}>
-      <div className="col tipografia">
+      <div className="col tipografia p-2">
         <ul className="m-0">
           {items.map((item, index) => (
             <ListItem

@@ -3,12 +3,12 @@ import Navbar from "../../components/Navbar"
 import "./style.css"
 import "./style-postlogin.css"
 
-import RepeatIcon from '../../assets/icons/repeat.svg'
-import CalendarIcon from '../../assets/icons/calendar.svg'
-import medicoVector from '../../assets/icons/medicoVector.svg'
-import MonumentIcon from '../../assets/icons/monument.svg'
-import NameIcon from '../../assets/icons/name.svg'
-import ScientificIcon from '../../assets/icons/scientific 1.svg'
+import RepeatIcon from '../../../../assets/icons/repeat.svg'
+import CalendarIcon from '../../../../assets/icons/calendar.svg'
+import medicoVector from '../../../../assets/icons/medicoVector.svg'
+import MonumentIcon from '../../../../assets/icons/monument.svg'
+import NameIcon from '../../../../assets/icons/name.svg'
+import ScientificIcon from '../../../../assets/icons/scientific 1.svg'
 
 const Postlogin = () => {
 

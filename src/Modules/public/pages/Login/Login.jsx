@@ -10,7 +10,7 @@ import KeyLogin from '../../../../assets/icons/key.svg'
 import InstruccionesAcceso from "../../components/InstruccionesAcceso"
 import ProyectosActivos from "../../components/ProyectosActivos"
 // import Navbar from "../../components/Navbar"
-import { Navbar } from "../../../shared/components/Navbar"
+import { Navbar } from "../../../Shared/components/Navbar"
 
 // Redux
 import { useDispatch } from 'react-redux'

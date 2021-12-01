@@ -3,8 +3,8 @@ import "./style.css"
 import "./style-postlogin.css"
 import Navbar from "../../components/Navbar"
 
-import CalendarIcon from '../../assets/icons/calendar.svg'
-import NameIcon from '../../assets/icons/name.svg'
+import CalendarIcon from '../../../../assets/icons/calendar.svg'
+import NameIcon from '../../../../assets/icons/name.svg'
 
 const UnseAutenticacion = () => {
 

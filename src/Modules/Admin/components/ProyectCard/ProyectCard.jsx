@@ -1,6 +1,6 @@
 import styles from './ProyectCard.module.css'
 import EmailIcon from '../../../../assets/icons/email.svg'
-import ImageRounded from '../../../shared/components/ImageRounded/ImageRounded';
+import ImageRounded from '../../../Shared/components/ImageRounded/ImageRounded';
 
 export const ProyectCard = () => {
     const tareasTotales = 20;
