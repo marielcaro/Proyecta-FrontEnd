@@ -1,4 +1,4 @@
-import styles from './ProyectCard.module.css'
+import styles from "../components.module.css"
 import ImageRounded from '../../../Shared/components/ImageRounded/ImageRounded';
 
 export const ProyectCard = () => {
@@ -6,7 +6,7 @@ export const ProyectCard = () => {
     const tareasCompletadas = 16;
     const porcentaje = parseInt(tareasCompletadas / tareasTotales * 100)
 
-    return <div className={`card my-3 mx-3 ${styles.shadowcard}`}>
+    return <div className={`card my-3 mx-5 ${styles.shadowcard}`}>
         <div className="card-body p-2 d-flex justify-content-center align-items-center">
             <ImageRounded height="48" width="48" className="me-3"/>
             <h6 className={styles.textocard}>PROYECTO 1</h6>

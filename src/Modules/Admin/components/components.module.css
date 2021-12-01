@@ -1,3 +1,7 @@
+.shadowcard {
+    box-shadow: 0px 4px 12px rgba(130, 130, 130, 0.5);
+}
+
 .container {
     padding: 30px;
 }
@@ -15,6 +19,12 @@
     font-size: 0.7vw;
 }
 
-.shadowcard {
-    box-shadow: 0px 4px 12px rgba(130, 130, 130, 0.5);
+.nametext{
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+.message{
+    font-size: 0.7vw;
+    color:lightblue;
 }

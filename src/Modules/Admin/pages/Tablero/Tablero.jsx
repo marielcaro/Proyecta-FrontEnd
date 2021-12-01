@@ -1,4 +1,4 @@
-import { CalendarCard, ProyectCard, TaskCard} from '../../components'
+import { CalendarCard, NotificationsCard, ProyectCard, TaskCard} from '../../components'
 import { BaseLayout } from '../../Layouts'
 
 export const Tablero = () => {
@@ -14,6 +14,7 @@ export const Tablero = () => {
             </div>
             <div className="col gap-0">
                 <CalendarCard />
+                <NotificationsCard />
             </div>
         </div>
     </BaseLayout>
